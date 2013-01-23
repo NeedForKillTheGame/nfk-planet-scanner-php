@@ -32,6 +32,12 @@ class PlanetScaner
      */
     public function getServers()
     {
+        // check port availability with timeout (timeout doesn't work on windows using socket_set_option)
+        if(!@fsockopen($this->planetAddress, $this->planetPort, $errCode, $errStr, 2)) {
+            throw new \Exception('Host is not responding (' . $errCode . '): ' . $errStr, $errCode);
+        }
+
+
         $socket = @socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
         if ($socket === false) {
             $errCode = socket_last_error();
@@ -129,7 +135,7 @@ class PlanetScaner
      * @param int $size
      * @return bool|string return false on read error
      */
-    private static function socketRead($socket, $size)
+    private function socketRead($socket, $size)
     {
         $buf = '';
         $len = 0;
