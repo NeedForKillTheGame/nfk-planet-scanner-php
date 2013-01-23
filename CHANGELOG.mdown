@@ -1,0 +1,3 @@
+* 1.0.0 (2013-01-23)
+
+  * Initial release: put Boobl functions into namespaced PHP class and composer package; format PSR-0/PSR-2
