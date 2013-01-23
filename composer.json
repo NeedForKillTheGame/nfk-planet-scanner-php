@@ -1,0 +1,30 @@
+{
+    "name": "nfk/planetscaner",
+    "description": "NFK Planet Scaner",
+    "keywords": ["library"],
+    "homepage": "http://needforkill.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Boobl",
+            "email": "boobl@gmail.com"
+        },
+        {
+            "name": "PQR",
+            "email": "pqr@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "ext-sockets": "*"
+    },
+    "autoload": {
+        "psr-0": { "NFK\\PlanetScaner": "" }
+    },
+    "target-dir": "NFK/PlanetScaner",
+    "extra": {
+        "branch-alias": {
+            "dev-default": "1.0.x-dev"
+        }
+    }
+}
