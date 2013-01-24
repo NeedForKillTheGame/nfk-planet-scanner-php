@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the NFK Planet Scaner package.
+ * This file is part of the NFK Planet Scanner package.
  *
  * (c) PQR <pqr@outlook.com>
  *
@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace NFK\PlanetScaner;
+namespace NFK\PlanetScanner;
 
-class PlanetScaner
+class PlanetScanner
 {
     private $planetAddress;
     private $planetPort;
@@ -20,7 +20,7 @@ class PlanetScaner
      * @param string $planetAddress
      * @param int $planetPort
      */
-    public function __construct($planetAddress, $planetPort)
+    public function __construct($planetAddress = "88.151.116.65", $planetPort = 10003)
     {
         $this->planetAddress = $planetAddress;
         $this->planetPort = $planetPort;
