@@ -4,13 +4,44 @@ NFK Planet Scanner - PHP implementation of Planet Scanner for Need For Kill
 Need For Kill - Quake 3 in 2D - free multiplayer game for Windows.
 Visit official website for video preview and more info: http://needforkill.com
 
+Installation
+------------
+
+The best way to install the library is to use Composer package manager (http://getcomposer.org).
+
+First, open your project directory (directory of your website where you want to use NFK Planet Scanner library) and create there file `composer.json` with following content:
+
+```javascript
+{
+    "minimum-stability": "dev",
+    "require": {
+        "nfk/planetscanner":"dev-default"
+    }
+}
+```
+
+Then open command line in your project directory and install composer:
+```bash
+MyNfkSite>curl -s http://getcomposer.org/installer | php
+```
+Or download composer.phar into your project dir manually: http://getcomposer.org/composer.phar
+
+Next install NFK Planet Scanner library using composer via command line:
+```bash
+MyNfkSite>php composer.phar install
+```
+
+After installation you can find `vendors` dir appeared at your project root with NFK Planet Scanner code inside.
+
 Usage
 -----
 
 ```php
 <?php
+//if you installed the lib via composer use it's autoload.php, otherwise include PlanetScanner.php directelly
+include "vendor/autoload.php";
 
-use NFK\PlanetScaner\PlanetScaner;
+use NFK\PlanetScanner\PlanetScanner;
 
 // create a scanner instance, tho args: planet IP and Port
 $scanner = new PlanetScanner("88.151.116.65", 10003);
@@ -31,5 +62,5 @@ Authors
 
 License
 -------
-NFK PlanetScaner is licensed under the MIT License - see the `LICENSE` file for details
+NFK Planet Scanner is licensed under the MIT License - see the `LICENSE` file for details
 

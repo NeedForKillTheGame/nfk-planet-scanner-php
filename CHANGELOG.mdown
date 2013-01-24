@@ -1,3 +1,7 @@
+* 1.0.1 (2013-01-24)
+
+  * Fix typos, rename PlanetScaner to PlanetScanner (double n in word Scanner)
+
 * 1.0.0 (2013-01-23)
 
   * Initial release: put Boobl functions into namespaced PHP class and composer package; format PSR-0/PSR-2
