@@ -1,4 +1,4 @@
-NFK Planet Scaner - PHP implementation of Planet Scaner for Need For Kill
+NFK Planet Scanner - PHP implementation of Planet Scanner for Need For Kill
 =============================
 
 Need For Kill - Quake 3 in 2D - free multiplayer game for Windows.
@@ -12,9 +12,9 @@ Usage
 
 use NFK\PlanetScaner\PlanetScaner;
 
-// create an scaner instance, tho args: planet IP and Port
-$scaner = new PlanetScaner("88.151.116.65", 10003);
-$serversInfoArray = $scaner->getServers();
+// create a scanner instance, tho args: planet IP and Port
+$scanner = new PlanetScanner("88.151.116.65", 10003);
+$serversInfoArray = $scanner->getServers();
 var_dump($serversInfoArray);
 
 ```
@@ -26,7 +26,7 @@ Requirements
 
 Authors
 ------
-- Boobl <boobl@gmail.com>
+- boobl <the.boobl@gmail.com>
 - PQR <pqr@outlook.com>
 
 License
