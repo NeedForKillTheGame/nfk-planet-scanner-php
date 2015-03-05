@@ -2,7 +2,10 @@ NFK Planet Scanner - PHP implementation of Planet Scanner for Need For Kill
 =============================
 
 Need For Kill - Quake 3 in 2D - free multiplayer game for Windows.
-Visit official website for video preview and more info: http://needforkill.com
+
+Game preview: http://www.youtube.com/watch?v=FgvgVttl0zE
+
+More about Need For Kill: http://info.needforkill.ru
 
 Installation
 ------------
